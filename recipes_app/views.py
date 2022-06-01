@@ -8,3 +8,6 @@ def home(request):
 
 def contato(request):
     return HttpResponse("Hello Contato!")
+
+def sobre(request):
+    return HttpResponse("Hello Sobre")
