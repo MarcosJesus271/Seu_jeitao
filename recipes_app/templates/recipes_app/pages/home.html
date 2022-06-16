@@ -3,14 +3,8 @@
     <main class="main-content-container">
         {% block content %}
         <div class="main-content main-content-list container">
-            {% include 'recipes_app/partials/recipe.html' %}
-            {% include 'recipes_app/partials/recipe.html' %}
-            {% include 'recipes_app/partials/recipe.html' %}
-            {% include 'recipes_app/partials/recipe.html' %}
-            {% include 'recipes_app/partials/recipe.html' %}
-            {% include 'recipes_app/partials/recipe.html' %}
-            {% include 'recipes_app/partials/recipe.html' %}
-            {% include 'recipes_app/partials/recipe.html' %}
-            {% include 'recipes_app/partials/recipe.html' %}
-        </div>
+            {% for recipe in recipes %}
+                {% include 'recipes_app/partials/recipe.html' %}
+            {% endfor %}
+    </div>
         {% endblock content %}

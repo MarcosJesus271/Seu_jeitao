@@ -159,6 +159,7 @@
 
     .recipes-list-item {
         max-width: 64rem;
+        
     }
 
     .recipes-list-item:hover {
