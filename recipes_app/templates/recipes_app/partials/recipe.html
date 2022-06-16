@@ -25,7 +25,7 @@
         </span>
         <span class="recipe-author-item">
             <i class="fas fa-calendar-alt"></i>
-            {{ recipe.created_at|date:"d/m/Y" }} às {{ recipe.created_at|date:"H:i" }}
+            {{ recipe.create_at|date:"d/m/Y" }} às {{ recipe.create_at|date:"H:i" }}
         </span>
         <span class="recipe-author-item">
             <a href="{% url 'recipes:category' recipe.category.id %}">
