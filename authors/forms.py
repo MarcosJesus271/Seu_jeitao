@@ -3,7 +3,6 @@ import re
 from django import forms
 from django.contrib.auth.models import User
 from django.core.exceptions import ValidationError
-from genericpath import exists
 
 
 def add_attr(field, attr_name, attr_new_val):
