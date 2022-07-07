@@ -1,0 +1,1 @@
+web: gunicorn Seu_jeitao.wsgi
