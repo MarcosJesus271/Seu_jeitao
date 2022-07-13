@@ -1,1 +1,1 @@
-web: gunicorn Seu_jeitao.wsgi
+web: gunicorn project.wsgi --log-file -
