@@ -38,7 +38,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="C:\Users\Administrator\Documents\Desenvolvimento e Sistemas\Seu_jeitao\0Machine"
+VIRTUAL_ENV="C:\Users\Administrator\Documents\Desenvolvimento e Sistemas\Seu_jeitao\.django_machine"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"
@@ -55,9 +55,9 @@ fi
 
 if [ -z "${VIRTUAL_ENV_DISABLE_PROMPT:-}" ] ; then
     _OLD_VIRTUAL_PS1="${PS1:-}"
-    PS1="(0Machine) ${PS1:-}"
+    PS1="(.django_machine) ${PS1:-}"
     export PS1
-    VIRTUAL_ENV_PROMPT="(0Machine) "
+    VIRTUAL_ENV_PROMPT="(.django_machine) "
     export VIRTUAL_ENV_PROMPT
 fi
 
