@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     # A gente tem apps também
     'recipes',
     'authors',
+    'storage',
 ]
 
 MIDDLEWARE = [
@@ -124,11 +125,25 @@ USE_I18N = True
 
 USE_TZ = True
 
+#AWS S3 Settings
+
+AWS_ACCESS_KEY_ID = 'AKIAT4WFSFE7TFGJNAGF'
+AWS_SECRET_ACCESS_KEY = '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'
+AWS_STORAGE_BUCKET_NAME = 'seu-jeitao'
+
+AWS_S3_FILE_OVERWRITE = False
+AWS_DEFAULT_ACL = None
+DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
+
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
+DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
+STATICFILES_SORAGE = 'storages.backends.s3boto3.S3StaticStorage'
 
 STATIC_URL = '/static/'
+MEDIA_URL = '/media/'
+
 STATICFILES_DIRS = [
     BASE_DIR / 'base_static',
 ]
