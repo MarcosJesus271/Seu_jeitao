@@ -124,6 +124,10 @@ USE_I18N = True
 
 USE_TZ = True
 
+LOCALE_PATHS = [
+    BASE_DIR / 'locale',
+]
+
 #AWS S3 Settings
 
 AWS_ACCESS_KEY_ID = 'AKIAT4WFSFE7TFGJNAGF'

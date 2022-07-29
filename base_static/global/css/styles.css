@@ -148,6 +148,7 @@ a {
 
 .main-content {
   padding-top: 0;
+
 }
 
 .main-content-list {
@@ -331,10 +332,13 @@ a {
 
 /* Forms */
 .form-content {
-  max-width: 64rem;
+  width: 24rem;
   margin: 0 auto;
   margin-bottom: var(--spacing-gutter-medium);
+  display: flex;
+  justify-content: center;
 }
+
 
 .form-content label,
 .form-content .help-text,
